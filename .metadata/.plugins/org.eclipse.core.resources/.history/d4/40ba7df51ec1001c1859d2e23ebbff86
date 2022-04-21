@@ -67,15 +67,15 @@ public class StudentData {
 					System.out.println("Student " + student + " is " + studentInfo[student][name]+ ". What would you like to know about " + studentInfo[student][name]+ "? (enter or “hometown” or “favorite food”): ");
 					String option = scrn.next();			
 					
-					while(cont) {	
+					
 					     switch (option) {
 					         case "hometown":
-					        	 System.out.println("Student " + studentInfo[student][name]+ " is from " + studentInfo[student][homeTown]+ ". Would you like to know more? (enter “yes” or “no): ");	
-					        	 option = scrn.next();
+					        	 System.out.println("Student " + studentInfo[student][name]+ " is from " + studentInfo[student][homeTown]+ ". What would you like to know about " + 
+					        			 studentInfo[student][name]+ "? (enter or “hometown” or “favorite food”): ");	
 					        	 continue;
 					         case "favorite food":
-					        	 System.out.println( studentInfo[student][name] + "'s favorite food is " + studentInfo[student][favFood]+ ".Would you like to know more? (enter “yes” or “no): ");
-					        	 option = scrn.next();
+					        	 System.out.println( studentInfo[student][name] + "'s favorite food is " + studentInfo[student][favFood]+ ". What would you like to know about " + 
+					        			 studentInfo[student][name]+ "? (enter or “hometown” or “favorite food”): ");					        	 					        	
 					        	 continue;
 					         case "yes":
 					        	 continue;	        	
@@ -89,7 +89,6 @@ public class StudentData {
 					             throw new IllegalArgumentException("That data does not exist.  Please try again. (enter or “hometown” or “favorite food ");
 					             
 					     }
-					}
 			} else System.out.println("NO ");
 		}
 	}

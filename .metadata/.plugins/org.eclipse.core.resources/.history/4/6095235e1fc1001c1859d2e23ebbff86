@@ -70,11 +70,13 @@ public class StudentData {
 					while(cont) {	
 					     switch (option) {
 					         case "hometown":
-					        	 System.out.println("Student " + studentInfo[student][name]+ " is from " + studentInfo[student][homeTown]+ ". Would you like to know more? (enter “yes” or “no): ");	
+					        	 System.out.println("Student " + studentInfo[student][name]+ " is from " + studentInfo[student][homeTown]+ ". What would you like to know about " + 
+					        			 studentInfo[student][name]+ "? (enter or “hometown” or “favorite food”): ");	
 					        	 option = scrn.next();
 					        	 continue;
 					         case "favorite food":
-					        	 System.out.println( studentInfo[student][name] + "'s favorite food is " + studentInfo[student][favFood]+ ".Would you like to know more? (enter “yes” or “no): ");
+					        	 System.out.println( studentInfo[student][name] + "'s favorite food is " + studentInfo[student][favFood]+ ". What would you like to know about " + 
+					        			 studentInfo[student][name]+ "? (enter or “hometown” or “favorite food”): ");
 					        	 option = scrn.next();
 					        	 continue;
 					         case "yes":
