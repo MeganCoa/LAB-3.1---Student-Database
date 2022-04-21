@@ -1,0 +1,62 @@
+import java.util.InputMismatchException;
+import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
+
+public class StudentData {
+
+	public static void main(String[] args) {
+		String[][] studentInfo = new String[9][3];
+		studentInfo[0][0] = "";
+		studentInfo[1][0] = "";
+		studentInfo[2][0] = "";
+		studentInfo[3][0] = "";
+		studentInfo[4][0] = "";
+		studentInfo[5][0] = "";
+		studentInfo[6][0] = "";
+		studentInfo[7][0] = "";
+		studentInfo[8][0] = "";
+		studentInfo[9][0] = "";
+		
+		studentInfo[0][1] = "";
+		studentInfo[1][1] = "";
+		studentInfo[2][1] = "";
+		studentInfo[3][1] = "";
+		studentInfo[4][1] = "";
+		studentInfo[5][1] = "";
+		studentInfo[6][1] = "";
+		studentInfo[7][1] = "";
+		studentInfo[8][1] = "";
+		studentInfo[9][1] = "";
+		
+		
+		studentInfo[0][2] = "";
+		studentInfo[1][2] = "";
+		studentInfo[2][2] = "";
+		studentInfo[3][2] = "";
+		studentInfo[4][2] = "";
+		studentInfo[5][2] = "";
+		studentInfo[6][2] = "";
+		studentInfo[7][2] = "";
+		studentInfo[8][2] = "";
+		studentInfo[9][2] = "";
+		
+		
+		Scanner scrn = new Scanner(System.in);
+		
+		try {
+			System.out.println("Welcome to our Java class.  Which student would you like to learn more about? (enter a number 1-10");
+			
+			double num = scrn.nextDouble();
+		} catch (InputMismatchException input) {
+			scrn.next();
+			System.out.println(" No");
+			
+		}
+		
+
+	}
+
+}
